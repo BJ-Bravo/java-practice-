@@ -3,8 +3,9 @@ import java.util.*;
 public class CS_IfElse {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("\n\tWanna know which Generation you belong to ??");
 
+        //else-if
+        System.out.println("\n\tWanna know which Generation you belong to ??");
         System.out.print("Just enter your age: ");
         int age = sc.nextInt();
         int year = 2026 - age ;//to get the year of birth
@@ -37,6 +38,38 @@ public class CS_IfElse {
 
         else{
             System.out.println("You belong to Stone age.");
+        }
+
+
+
+        // if-else
+        System.out.println("\nThis is for if-else conditional statement");
+        System.out.print("Enter a number to check even or odd:");
+        int num = sc.nextInt();
+        if(num%2==0){
+            System.out.println(num+" is a even number.");
+        }
+        else{
+            System.out.println(num+" is a odd number.");
+        }
+
+
+
+        //switch case
+        System.out.println("Press 1, 2, or 3");
+        int button = sc.nextInt();
+        switch(button){
+            case 1:
+                System.out.println("Hello");//if you take char as input then it should case 'a'...case 'b'
+                break;
+            case 2:
+                System.out.println("Namaste");
+                break;
+            case 3:
+                System.out.println("Khurumjari");
+                break;
+            default:
+                System.out.println("Enter either 1, 2 or 3 only");
         }
 
     }
